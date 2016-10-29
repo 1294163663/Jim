@@ -145,10 +145,10 @@ switch ($_GET['action']) {
         if ($_POST['pw1'] != $_POST['pw2']) {
             die("<script>alert('前后两次密码不一致');window.history.back();</script>");
         }
-        if($_POST['idt']=="teacher" && $_POST['key'] != "teacherKey"&&$_GET['myid']!="root"){
+        if($_POST['idt']=="teacher" &&$_GET['myid']!="root"&& $_POST['key'] != "teacherKey"){
             die("<script>alert('教师注册码错误');window.history.back();</script>");
         }
-        if($_POST['idt']=="root" && $_POST['key'] != "rootKey"&&$_GET['myid']!="root"){
+        if($_POST['idt']=="root" &&$_GET['myid']!="root"&& $_POST['key'] != "rootKey"){
             die("<script>alert('管理员注册码错误');window.history.back();</script>");
         }
 
