@@ -1,2 +1,0 @@
-# Jim
-Jim's studio
