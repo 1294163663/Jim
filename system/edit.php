@@ -70,7 +70,7 @@ if ($stm->rowCount()){
 
     //不同身份修改信息的跳转
     if ($_GET['myid']=='root'){
-        echo"     <form action=\"action.php?action=Edt&id=root&myid=root\" method=\"post\"  enctype=\"multipart/form-data\"> ";
+        echo"     <form action=\"action.php?action=Edt&id=$_GET[id]&myid=root\" method=\"post\"  enctype=\"multipart/form-data\"> ";
     }elseif ($arr['identity']=='teacher'){
         echo"     <form action=\"action.php?action=Tra&id=teacher&myid=$_GET[myid]\" method=\"post\"  enctype=\"multipart/form-data\"> ";
     }else{
