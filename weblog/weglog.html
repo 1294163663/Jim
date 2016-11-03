@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>博客主页</title>
+    <style>
+        div#background{
+            width: 100%;height: 1000px; background-color: #e3e3e3;
+        }
+        div#container{
+            width: 80%;margin-left: auto;margin-right: auto;
+        }
+        div#header{
+            background-image:url("004dNWHDgy6DQRqa4YMf8&690.jpg");
+            background-color: #adadad;
+            border: solid;;
+        }
+        .header{
+            float:inherit;
+
+            padding-left: 3%;
+            padding-right: 3%;
+        }
+        div#content{
+            width:71%; background-color: #a6e1ec;border: solid 1px;float: left;;
+        }
+        div.content{
+            width: auto;height: 200px;border: solid;margin-bottom: 10px;border-width: 2px;
+        }
+        div#user{
+            width:28%;border: solid;float: right;
+        }
+        #image{
+            width: 80%;height:60%;
+        }
+        div#extra{
+            width:28%;min-height:365px;border: solid;float:right;text-decoration: none;
+        }
+        .news{
+            padding-left: 5%;
+            padding-right: 5%;
+        }
+        a{
+            text-decoration: none;
+        }
+        a:hover{
+            background-color: #9d9d9d;
+        }
+    </style>
+</head>
+<body>
+<div  id="background">
+<div id="container">
+    <div id="header">
+            <b>个人博客</b>
+            <p>青春是打开了，就合不上的书，人生是踏上了，就回了头的路，爱情是扔出了，就收不回的赌注</p>
+            <a href="" class="header">首页</a>
+            <a href="" class="header">关于我</a>
+            <a href=""  class="header">碎言碎语</a>
+            <a href=""  class="header">个人日记</a>
+            <a href=""  class="header">相册展览</a>
+            <a href=""  class="header">关于我</a>
+            <a href=""  class="header">留言板</a>
+
+    </div>
+    <div id="content">
+        <a href=""><img src="image\font-61469.png" style="width: 50px;height: 50px">文章推荐</a><hr>
+        <div class="content"></div>
+        <div class="content"></div>
+        <div class="content"></div>
+
+    </div>
+    <div id="user">
+        <b>关于博主</b><hr>
+        <img id="image" src="image\test.jpg">
+        <p>博主：XX</p>
+        <p>职业：web后端、php忠实信仰者</p>
+        <a href=""><img src="image\button_old_11.gif"></a>
+    </div>
+    <div id="extra">
+        <a class="news" href="javascript:introduce()">精心推荐</a>
+        <a class="news" href="javascript:news()">最新文章</a>
+        <a class="news" href="javascript:random()">随机文章</a><hr>
+        <div>
+            <p id="extraContent">
+                这是精心推荐
+            </p>
+        </div>
+    </div>
+
+</div>
+</div>
+<script>
+    function random() {
+        document.getElementById("extraContent").innerHTML="我爱代码";
+    }
+    function news() {
+        document.getElementById("extraContent").innerHTML="代码爱我";
+    }
+    function introduce() {
+        document.getElementById("extraContent").innerHTML="在代码的海洋里遨游";
+    }
+
+</script>
+</body>
+</html>
