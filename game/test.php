@@ -6,6 +6,13 @@
  * Time: 18:07
  */
 //bin2hex 和 ord
+header("Content-Type:text/html;charset=utf8");
+if (empty($_GET['name'])){
+    die("<script>alert('逗我呢？');window.history.back();</script>");
+}
+if (!preg_match_all("/[\x{4e00}-\x{9fa5}]+|[a-zA-Z]+/u", $_GET['name'])){
+    die("<script>alert('我不信这是名字');window.history.back();</script>");
+}
 $userName = $_GET['name'];
 $userLength = strlen($userName);
 $userCode = '1';
