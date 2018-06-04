@@ -1,2 +1,2 @@
-# Jim
-Jim's studio
+# Rouis
+学编程的第一次项目，学籍管理系统，写的很菜
